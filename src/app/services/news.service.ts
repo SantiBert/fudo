@@ -11,10 +11,10 @@ export class NewsService {
   ) { }
 
   getArticles(): Observable<Response>{
-    return this.http.get<any>('https://newsapi.org/v2/top-headlines?country=us&apiKey=4ce98562f9184ad58fd3fae0e2b2101c')
+    return this.http.get<any>('https://newsapi.org/v2/top-headlines?country=us&apiKey=8ab9f6a80b5241b4ba7f0b3938ea683e')
   }
 
   getArticlesByCategory(category:string):Observable<Response>{
-    return this.http.get<any>(`https://newsapi.org/v2/top-headlines?country=us&category=${category}&apiKey=4ce98562f9184ad58fd3fae0e2b2101c`)
+    return this.http.get<any>(`https://newsapi.org/v2/top-headlines?country=us&category=${category}&apiKey=8ab9f6a80b5241b4ba7f0b3938ea683e`)
   }
 }
